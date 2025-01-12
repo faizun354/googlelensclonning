@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1055897694726",
+    "project_id": "lens-application-55240",
+    "storage_bucket": "lens-application-55240.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055897694726:android:64a3e0945f7343846a8987",
+        "android_client_info": {
+          "package_name": "com.example.googlelensapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApWhFqTxYd4GVAOp3xCsetH6CTw0YSxzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

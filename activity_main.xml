@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- ImageView for displaying our image -->
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="500dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/google" />
+
+    <!-- LinearLayout for buttons -->
+    <LinearLayout
+        android:id="@+id/idLLButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <!-- First ImageButton -->
+        <!-- New ImageButton for Image to Text Converter -->
+
+
+        <ImageButton
+            android:id="@+id/idBtnImageToText"
+            android:layout_width="65dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:background="#8B9C27B0"
+            android:contentDescription="Convert Image to Text"
+            app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+        <ImageButton
+            android:id="@+id/snapbtn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#B0E91E63"
+            android:contentDescription="Take a photo"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+
+        <!-- Second ImageButton -->
+        <ImageButton
+            android:id="@+id/idBtnSearchResuts"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#AD03A9F4"
+            android:contentDescription="Search results"
+            app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <!-- RecyclerView for displaying the list of result -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLLButtons" />
+
+</RelativeLayout>
